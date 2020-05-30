@@ -1,5 +1,4 @@
 {% extends 'blog/base.html' %}
-    
 {%block content%}
     <center>
         {% for post in posts %}
@@ -8,20 +7,31 @@
           <header class="w3-container w3-light-grey">
             <h3 class="w3-left p-1"> {{post.title}} </h3>
           </header>
-          
+
           <div class="w3-container">
-            <p class="w3-left p-1">Written By <a href="#" on> {{post.author}} </a>/ <span class="text-muted">{{post.date_posted}}</span></p><br>
-            <hr>
+            <p class="w3-left p-1">Written By <a href="#" on> {{post.author}} </a> / <span class="text-muted">{{post.date_posted}}</span></p><br>
           </div>
+
           <div class="w3-container">
             <p class="w3-left p-2"> {{post.content}} </p>
           </div>
-          
-          <button class="w3-button w3-block w3-blue ">Subscribe</button>
-          
+          <div class="container row">
+            <div class="btn-group">
+              <a class="btn btn-default" href="#">
+                <i class="fa fa-heart-o" title="Align Left"></i>
+              </a>
+              <a class="btn btn-default" href="#">
+                <i class="fa fa-comments-o" title="Align Center"></i>
+              </a>
+              <a class="btn btn-default" href="#">
+                <i class="fa fa-bookmark-o" title="Align Right"></i>
+              </a>
+              <a class="btn btn-default" href="#">
+                <i class="fa fa-share" title="Align Justify"></i>
+              </a>
+            </div>
+          </div>
         </div>
         {% endfor %}
     </center>
 {%endblock%}
-
-

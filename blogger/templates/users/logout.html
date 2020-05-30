@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+
+{%block content%}
+    <center>
+        <div class="card w3-align-left">
+            <legend>
+                <p>Your account has been looged out. Thanks for spending time on Blogger-Shlogger.</p>
+                <p>We'll miss you a lot !!</p>
+            </legend>
+                <div class="border-top p mt-4">
+                    <small class="text-muted">
+                        <a class="ml-2" href=" {% url 'login' %} ">Login Again</a>
+                    </small>
+                </div>
+            </form>
+        </div>
+    </center>
+{%endblock%}
