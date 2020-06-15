@@ -1,7 +1,35 @@
 {% extends 'blog/base.html' %}
 {% load crispy_forms_tags %}
 {%block content%}
-    <center>
-        <h1> {{user.username}} </h1>
-    </center>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 col-sm-6">
+
+            <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img alt="" src="http://lorempixel.com/100/100/people/9/">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <a target="_blank" href="https://scripteden.com/">Script Eden</a>
+                    </div>
+                    <div class="desc">Passionate designer</div>
+                    <div class="desc">Curious developer</div>
+                    <div class="desc">Tech geek</div>
+                </div>
+                <div class="bottom">
+                    <center>
+                        <button type="button" class="btn btn-default btn-round-lg btn-lg">Follow</button>
+                    </center>
+
+                </div>
+            </div>
+
+        </div>
+
+	</div>
+</div>
 {%endblock%}
